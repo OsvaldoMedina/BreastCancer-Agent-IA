@@ -57,6 +57,16 @@ python -m venv .BreastCancer-Agent-IA
 source .BreastCancer-Agent-IA/bin/activate   # En Windows: conda activate BreastCancer-Agent-IA
 pip install -r requirements.txt
 uvicorn app.server:app --reload --host 0.0.0.0 --port 8000
+
+```
+
+### 4.1 ) Si tienes problemas con el mlflow
+```bash
+En tu env MLFLOW_TRACKING_URI=http://localhost:5000
+En otra terminal : mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri ./_mlflow --default-artifact-root ./_mlflow
+conda activate BreastCancer-Agent-IA
+uvicorn app.server:app --reload --host 0.0.0.0 --port 8000
+
 ```
 
 ### 5) Indexar conocimiento (RAG)
