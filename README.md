@@ -53,8 +53,8 @@ docker compose up --build
 
 ### 4) Ejecutar localmente (sin Docker)
 ```bash
-python -m venv .venv
-source .venv/bin/activate   # En Windows: .venv\Scripts\activate
+python -m venv .BreastCancer-Agent-IA
+source .BreastCancer-Agent-IA/bin/activate   # En Windows: .\BreastCancer-Agent-IA\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.server:app --reload --host 0.0.0.0 --port 8000
 ```
