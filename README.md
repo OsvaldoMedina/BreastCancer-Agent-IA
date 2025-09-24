@@ -115,4 +115,4 @@ git commit -m "feat: breast cancer LLM assistant (RAG + MLflow)"
 - Si `chromadb` no persiste, verifica permisos de `vectorstore/`.
 - Si no ves `usage` en OpenAI, actualiza `openai` a la versión indicada.
 
-¡Éxito con tu asistente! 💙
+¡Éxito con tu asistente! 
